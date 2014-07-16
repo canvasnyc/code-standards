@@ -62,7 +62,7 @@
   1. _by related values_
   2. _alphabetically_
 * Use unit-less line-height. `line-height: 1.5;`
-* Other units should tipically be in:
+* Other units should typically be in:
   1. _px_
   2. _ems_
   3. _%_
@@ -99,7 +99,7 @@
 
 * Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming conventions.
 * Provide clear names for your selectors.
-* Do not unnecessarily abriviate selectors, and reduce readability.
+* Do not unnecessarily abbreviate selectors, and reduce readability.
 * Strive to create loosely coupled, modular code that can be easily reused regardless of 
   its container or contents.
 * Avoid the use of ID’s. The negligible performance difference is not worth the limitations.
@@ -129,7 +129,7 @@
 //
 //  Section comment block: for specs or table of contents
 //
-//  Project: Exmaple Project
+//  Project: Example Project
 //  Version: 1.1
 //  Last change: 05/06/2014
 //  Primary use: Examples
@@ -166,7 +166,7 @@
 ## 6. Overrides
 
 * Avoid using `!important` unless __absolutely necessary__.
-* Try to work with the cascade and avoid unecessary overrides.
+* Try to work with the cascade and avoid unnecessary overrides.
 * Try to avoid chaining selectors `.myselector.another.and-another` but 
   rather create a new specific class.
 * Use .ie conditionals to set IE specific code.
@@ -182,7 +182,7 @@
 * Nest media queries inside the original selector, allow them to be easily located
   and modified. If Sprockets is available combine all media queries for production 
   with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
-* When nesting creates readability issues, include your media quierys at the bottom
+* When nesting creates readability issues, include your media queries at the bottom
   of that partial.
 
 #### Example:
@@ -228,7 +228,7 @@ $break-large: 46.8em;
 * Always place nested selectors after it's parents.
 * Use variables for all common numbers, and numbers with meaning.
 * Use Compass for all vendor prefixing
-* Consolodate all global Variables and Mixins into their own files. 
+* Consolidate all global Variables and Mixins into their own files. 
 
 
 <a name="organization"></a>
