@@ -1,6 +1,7 @@
 # Canvas Engineering Guide
 
-## Styleguides
+## Coding Styleguides
 
-1. [CSS Style Guide](css/README.md)
-2. [HTML Style Guide] (css/README.md)
+- [Front-end Best Practices](front-end/README.md)
+- [CSS Style Guide](front-end/css-styleguide.md)
+- [HTML Style Guide] (front-end/html-styleguide.md)
