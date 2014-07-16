@@ -1,1 +1,1 @@
-git standards go here
+[A git workflow for agile teams](http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html)
