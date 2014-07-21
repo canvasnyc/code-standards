@@ -10,13 +10,16 @@
 5.  [Links / References](#links)
 
 
+<br>
 <a name="principles"></a>
 ## 1. Principles
 
 > The point of writing Cucumber tests is to create a specification about what the code does that can be understood by the people on your team who can't read code.
+
 > Keep your step descriptions as uncoupled to the interface as possible. Features are not meant to be tied to one particular implementation. Implementation is handled in the step definition.
 
 
+<br>
 <a name="organization"></a>
 ## 2. Organization
 
@@ -24,8 +27,9 @@
 * Step definitions & Step descriptions should be organized by functionality
 * 1 feature per step description file
 * The name of the *step description* file should describe the feature (e.g. `cancel_order.feature`)
-* The name of the *step definition* file matches the step description (e.g. `cancel_order_steps.rb`)
+* The name of the *step definition* file matches the step description + `_steps` (e.g. `cancel_order_steps.rb`)
 
+<br>
 Example directory structure:
 ```
   /features
@@ -60,12 +64,15 @@ Example directory structure:
 ```
 
 
+<br>
 <a name="naming"></a>
 ## 3. Naming
 
 Let's build a vending machine application. Here is an example feature:
 
 ```
+# /features/step_descriptions/service/serve_coffee.feature
+
 Feature: Serve coffee
   Coffee should not be served until paid for
   Coffee should not be served until the button has been pressed
@@ -79,28 +86,32 @@ Feature: Serve coffee
 ```
 Reference: [cucumber wiki](https://github.com/cucumber/cucumber/wiki).
 
-* Features are named by completing this sentence: 'The application (should be able to/have a) \_\_\_\_\_'.
-In our case, one requirement is that *the application should serve coffee*.
+* Features are named by completing this sentence: *The application (should be able to/have a) \_\_\_\_\_*.
+In our case, one requirement is that *the application should be able to serve coffee*.
 Let's say that this feature fits under the 'service' category.
-Your step description for that feature is `service/serve_coffee.feature`.
-Your step definition for that feature would be `service/serve_coffee_steps.rb`.
+  * Your step description for that feature is `service/serve_coffee.feature`.
+  * Your step definition for that feature would be `service/serve_coffee_steps.rb`.
 
 * The description under the feature is where you put the things that need to happen (or shouldn't happen) in order for this feature to accepted as working properly.
-One thing that might go here is that a customer has to pay before they get their coffee.
-Also, the coffee should dispense only after a button is pressed.
-Finally, if the coffee supply has run dry, the money should be refunded.
+  * One thing that might go here is that a customer has to pay before they get their coffee.
+  * Also, the coffee should dispense only after a button is pressed.
+  * Finally, if the coffee supply has run dry, the money should be refunded.
 
 * Scenarios are named to describe some kind of user action such as 'buy last coffee' or 'browse coffee choices'.
 
 
+<br>
 <a name="scenarios"></a>
 ## 4. Writing Scenarios
 
 > A scenario should describe the acceptance criteria of the feature instead of a huge number of specific actions the user needs to take to accomplish the task.
 
-Let's look at a feature called 'redirect user login' in the file `/features/authentication/redirect_user_login.features`
+<br>
+Let's look at a feature called 'redirect user login' that gets too specific about its implementation:
 
 ```
+# /features/authentication/redirect_user_login.features
+
 Feature: Redirect user login
   User should have to log in before accessing restricted content
 
@@ -117,8 +128,11 @@ What happens if we decide to implement authentication differently (perhaps oauth
 What if we want users to log in using their email address rather than their user name?
 We would have to change the step description as well as the step definition even though the objective of the feature itself hasn't changed.
 
-Improve maintainability by keeping implementation details out of the feature:
+<br>
+**Improve maintainability by keeping implementation details out of the feature:**
 ```
+# /features/authentication/redirect_user_login.features
+
 Feature: Redirect user login
   User should have to log in before accessing restricted content
 
@@ -131,9 +145,12 @@ Feature: Redirect user login
 ```
 
 
+<br>
 <a name="links"></a>
 ## 5. Links / References
 
-[](http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/)
-[](http://benmabey.com/2008/05/19/imperative-vs-declarative-scenarios-in-user-stories.html)
-[](http://www.elabs.se/blog/15-you-re-cuking-it-wrong)
+[Whose domain is it anyway?](http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/)
+
+[Imperative vs. declarative scenarios in user stories](http://benmabey.com/2008/05/19/imperative-vs-declarative-scenarios-in-user-stories.html)
+
+[You're cuking it wrong](http://www.elabs.se/blog/15-you-re-cuking-it-wrong)
