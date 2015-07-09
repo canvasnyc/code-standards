@@ -30,10 +30,17 @@
 * Always consider the responsive behavior and flow of elements when structuring markup. Not even CSS can override the order of HTML elements.
   
 <a name="accessibility"></a>
-## 4. Accessibility
+## 4. Accessibility & SEO
 
-* Use `alt` text on all images.
-* Always print out text inside elements that use image replacement.
+* Use `alt` attributes on all images.
+* Never use images in place of important text.
+* Always print out hidden text inside elements that use image replacement.
+* Only use image replacement when absolutely necessary.
+* Use `title` attributes text on all links.
+* Always include lables on form elements (even if they need to be hidden).
+* Include a tab-index on all form elements.
+* Be sure to include a live text H1 tag on every page with relavent contextual copy.
+* Only add a new tag when absolutely neccessary or required by semantics to avoid over-nesting.
 
 <a name="sources"></a>
 ## 5. Sources
