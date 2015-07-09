@@ -20,7 +20,7 @@
 
 * Always use the HTML5 doctype: `<!doctype html>`
 * Use HTML5 semantic elements when appropriate. If in doubt, refer to [HTML5 Doctor](http://html5doctor.com/element-index/) for a description of elements.
-* Use section and article tags based on correct semantics and never interchangably.
+* Use section and article tags based on correct semantics and never interchangeably.
 
 <a name="layout"></a>
 ## 3. Layout
@@ -38,11 +38,11 @@
 * Always print out hidden text inside elements that use image replacement.
 * Only use image replacement when absolutely necessary.
 * Use `title` attributes on all links.
-* Always include lables on form elements (even if they need to be hidden).
+* Always include labels on form elements (even if they need to be hidden).
 * Include a tab-index on all form elements.
 * When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
-* Be sure to include a live text H1 tag on every page with relavent contextual copy.
-* Only add a new tag when absolutely neccessary or required by semantics to avoid over-nesting.
+* Be sure to include a live text H1 tag on every page with relavant contextual copy.
+* Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
 
 <a name="sources"></a>
 ## 5. Sources
