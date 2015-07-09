@@ -42,13 +42,17 @@
 * Make important hidden text available to screen readers.
 
 <a name="seo"></a>
-## 6. SEO
+## 5. SEO
 
 * Use `alt` attributes on all images.
 * Never use images in place of important text.
 * Always print out hidden text inside elements that use image replacement.
 * Use `title` attributes on all links.
 * Be sure to include a live text `h1` tag on every page with relavant contextual copy.
+* Do not wrap important content inside JS (exceptions based on framework).
+* Always include a relavant `title` meta tag.
+* When formatting title meta tags always include the site name after the page description, not before. `<meta name="title" content="Contact Us | Canvas">`
+* Always include a relavant `desc` meta tag.
 
 <a name="sources"></a>
 ## 00. Sources
