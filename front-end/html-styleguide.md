@@ -62,7 +62,7 @@
 * Add attributes in a consistent order to improve readability.
 ```
 <a href="link-1" id="id-1" class="class-1" title="title-1">Link 1</a>
-<a href="link-2" id="id-1" class="class-1" title="title-1">Link 2</a>
+<a href="link-2" id="id-2" class="class-2" title="title-2">Link 2</a>
 ```
 
 <a name="sources"></a>
