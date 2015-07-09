@@ -53,6 +53,7 @@
 * Always include a relavant `title` meta tag.
 * When formatting title meta tags always include the site name after the page description, not before. `<meta name="title" content="Contact Us | Canvas">`
 * Always include a relavant `desc` meta tag.
+* When necessary use [schema](http://schema.org/) to enhance SEO.
 
 <a name="sources"></a>
 ## 00. Sources
