@@ -36,9 +36,10 @@
 * Never use images in place of important text.
 * Always print out hidden text inside elements that use image replacement.
 * Only use image replacement when absolutely necessary.
-* Use `title` attributes text on all links.
+* Use `title` attributes on all links.
 * Always include lables on form elements (even if they need to be hidden).
 * Include a tab-index on all form elements.
+* When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
 * Be sure to include a live text H1 tag on every page with relavent contextual copy.
 * Only add a new tag when absolutely neccessary or required by semantics to avoid over-nesting.
 
