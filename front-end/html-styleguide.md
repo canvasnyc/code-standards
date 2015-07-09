@@ -63,6 +63,9 @@
 ```
 <a href="link-1" id="id-1" class="class-1" title="title-1">Link 1</a>
 <a href="link-2" id="id-2" class="class-2" title="title-2">Link 2</a>
+
+a#id-1.class-1 href="link-1" title="title-1"
+a#id-2.class-2 href="link-2" title="title-2"
 ```
 
 <a name="sources"></a>
