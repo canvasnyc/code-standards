@@ -20,6 +20,7 @@
 
 * Always use the HTML5 doctype: `<!doctype html>`
 * Use HTML5 semantic elements when appropriate. If in doubt, refer to [HTML5 Doctor](http://html5doctor.com/element-index/) for a description of elements.
+* Use section and article tags based on correct semantics and never interchangably.
 
 <a name="layout"></a>
 ## 3. Layout
