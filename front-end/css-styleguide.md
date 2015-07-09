@@ -58,14 +58,12 @@
 * Do not specify units for 0 values. `margin: 0;`
 * Try to limit use of shorthand declarations to instances where you must explicitly set 
   all the available values.
-* Order properties:
-  1. _by related values_
-  2. _alphabetically_
+* Order properties _alphabetically_.
 * Use unit-less line-height. `line-height: 1.5;`
-* Other units should typically be in:
-  1. _px_
-  2. _ems_
-  3. _%_
+* Other units should tipically be in:
+  1. px
+  2. ems
+  3. %
 * Use double rather than single quotation marks. `input[type="text"]` not `input[type='text']`
 
 #### Example:
@@ -91,6 +89,11 @@
     }
   }
 }
+
+.example--variation {
+  @extend .example;
+  color: $blue;
+}
 ```
 
 
@@ -99,7 +102,7 @@
 
 * Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming conventions.
 * Provide clear names for your selectors.
-* Do not unnecessarily abbreviate selectors, and reduce readability.
+* Do not unnecessarily abriviate selectors, and reduce readability.
 * Strive to create loosely coupled, modular code that can be easily reused regardless of 
   its container or contents.
 * Avoid the use of ID’s. The negligible performance difference is not worth the limitations.
@@ -129,7 +132,7 @@
 //
 //  Section comment block: for specs or table of contents
 //
-//  Project: Example Project
+//  Project: Exmaple Project
 //  Version: 1.1
 //  Last change: 05/06/2014
 //  Primary use: Examples
@@ -166,11 +169,11 @@
 ## 6. Overrides
 
 * Avoid using `!important` unless __absolutely necessary__.
-* Try to work with the cascade and avoid unnecessary overrides.
+* Try to work with the cascade and avoid unecessary overrides.
 * Try to avoid chaining selectors `.myselector.another.and-another` but 
   rather create a new specific class.
 * Use .ie conditionals to set IE specific code.
-* Use Modernizr to provide feature classes and overrides.
+* Use Modernizr when necessary to provide feature classes and overrides.
 
 
 <a name="responsive"></a>
@@ -182,36 +185,41 @@
 * Nest media queries inside the original selector, allow them to be easily located
   and modified. If Sprockets is available combine all media queries for production 
   with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
-* When nesting creates readability issues, include your media queries at the bottom
+* When nesting creates readability issues, include your media quierys at the bottom
   of that partial.
 
 #### Example:
 
 ```
-// Set Variables
-$break-small: 24em;
-$break-large: 46.8em;
+// Specify Variables
+$break-xs:  320px  !default;
+$break-sm:  580px  !default;
+$break-md:  768px  !default;
+$break-lg:  1024px !default;
+$break-xl:  1240px !default;
 
 // Create Mixin
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
-  }
-  @else if $media == wide-screens {
-    @media only screen and (min-width: $break-large) { @content; }
+$breakpoints: (
+  'xs': ( max-width: $break-sm - 1 ),
+  'sm': ( min-width: $break-sm ),
+  'md': ( min-width: $break-md ),
+  'lg': ( min-width: $break-lg ),
+  'xl': ( min-width: $break-xl )
+);
+
+@mixin breakpoint($name) {
+  @media #{inspect(map-get($breakpoints, $name))} {
+    @content;
   }
 }
 
-// Embed Query
+// Embed Mixin
 .example-class {
   float: left;
   width: 250px;
-  @include respond-to(handhelds)      { width: 100% ;}
-  @include respond-to(medium-screens) { width: 50%; }
-  @include respond-to(wide-screens)   { float: none; }
+  @include respond-to($break-sm) { width: 100%; }
+  @include respond-to($break-md) { width: 50%;  }
+  @include respond-to($break-lg) { float: none; }
 }
 ```
 
@@ -221,14 +229,14 @@ $break-large: 46.8em;
 * Avoid unnecessary nesting.
 * Keep your nesting limited to 3 levels.
 * Keep SCSS partials limited to 500 lines.
-* Avoid nesting more than 50 lines.
+* Avoid nesting more than 50 consecutive lines.
 * Always place `@extend` statements on the first lines of a declaration block.
 * Always place regular styles in the middle.
 * Always place `@include` statements on the last lines of a declaration block.
 * Always place nested selectors after it's parents.
 * Use variables for all common numbers, and numbers with meaning.
 * Use Compass for all vendor prefixing
-* Consolidate all global Variables and Mixins into their own files. 
+* Consolodate all global Variables and Mixins into their own files. 
 
 
 <a name="organization"></a>
@@ -291,8 +299,8 @@ sass/
 <a name="resets"></a>
 ## 10. Resets
 
-* Include [normalize](http://necolas.github.io/normalize.css/) in every project as a foundation.
-* When possible `box-sizing: border-box` as a global reset.
+* Include [normalize](http://necolas.github.io/normalize.css/) , or equivalent, in every project as a foundation.
+* When possible specify `box-sizing: border-box` as a global reset.
 
 #### Example:
 
