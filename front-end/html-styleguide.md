@@ -6,7 +6,8 @@
 2.  [HTML5] (#html5)
 3.  [Layout](#layout)
 4.  [Accessibility](#accessibility)
-5.  [Sources](#sources)
+5.  [Seo](#seo)
+00. [Sources](#sources)
 
 <a name="principles"></a>
 ## 1. Principles
@@ -31,33 +32,25 @@
 * Always consider the responsive behavior and flow of elements when structuring markup. Not even CSS can override the order of HTML elements.
   
 <a name="accessibility"></a>
-## 4. Accessibility & SEO
+## 4. Accessibility
+
+* Only use image replacement when absolutely necessary.
+* Always include labels on form elements (even if they need to be hidden).
+* Include a `tabindex` attribute on all form elements.
+* When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
+* Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
+* Make important hidden text available to screen readers.
+
+<a name="seo"></a>
+## 6. SEO
 
 * Use `alt` attributes on all images.
 * Never use images in place of important text.
 * Always print out hidden text inside elements that use image replacement.
-* Only use image replacement when absolutely necessary.
 * Use `title` attributes on all links.
-* Always include labels on form elements (even if they need to be hidden).
-* Include a `tabindex` attribute on all form elements.
-* When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
 * Be sure to include a live text `h1` tag on every page with relavant contextual copy.
-* Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
-* Make important hidden text available to screen readers.
-```
-%visuallyhidden {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
-}
-```
 
 <a name="sources"></a>
-## 5. Sources
+## 00. Sources
 
 * [HTML5 Doctor Element Index](http://html5doctor.com/element-index/)
