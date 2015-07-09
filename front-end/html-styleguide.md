@@ -7,6 +7,7 @@
 3.  [Layout](#layout)
 4.  [Accessibility](#accessibility)
 5.  [Seo](#seo)
+5.  [Formatting](#formatting)
 00. [Sources](#sources)
 
 <a name="principles"></a>
@@ -54,6 +55,15 @@
 * When formatting title meta tags always include the site name after the page description, not before. `<meta name="title" content="Contact Us | Canvas">`
 * Always include a relavant `desc` meta tag.
 * When necessary use [schema](http://schema.org/) to enhance SEO.
+
+<a name="formatting"></a>
+## 6. Formatting
+
+* Add attributes in a consistent order to improve readability.
+```
+<a href="link-1" id="id-1" class="class-1" title="title-1">Link 1</a>
+<a href="link-2" id="id-1" class="class-1" title="title-1">Link 2</a>
+```
 
 <a name="sources"></a>
 ## 00. Sources
