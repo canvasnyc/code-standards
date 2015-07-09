@@ -39,10 +39,23 @@
 * Only use image replacement when absolutely necessary.
 * Use `title` attributes on all links.
 * Always include labels on form elements (even if they need to be hidden).
-* Include a tab-index on all form elements.
+* Include a `tabindex` attribute on all form elements.
 * When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
-* Be sure to include a live text H1 tag on every page with relavant contextual copy.
+* Be sure to include a live text `h1` tag on every page with relavant contextual copy.
 * Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
+* Make important hidden text available to screen readers.
+```
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+```
 
 <a name="sources"></a>
 ## 5. Sources
