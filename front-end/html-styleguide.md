@@ -113,7 +113,7 @@ head
 ## 8. Technology
 
 * Always use [Slim](http://slim-lang.com/) in ruby/rails environments including [Middleman](https://middlemanapp.com/).
-* Always use [Middleman](https://middlemanapp.com/) for static sites/site with no back end.
+* Always use [Middleman](https://middlemanapp.com/) for static sites/sites with no back end.
 * Use [Jade](http://naltatis.github.io/jade-syntax-docs/) in all node based environments.
 * Do not mix preprocessing languages and remain consistent.
 
