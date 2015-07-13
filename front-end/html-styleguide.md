@@ -112,3 +112,4 @@ head
 ## 00. Sources
 
 * [HTML5 Doctor Element Index](http://html5doctor.com/element-index/)
+* [Favicon Format Generator](http://realfavicongenerator.net/)
