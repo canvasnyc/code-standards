@@ -8,6 +8,7 @@
 4.  [Accessibility](#accessibility)
 5.  [Seo](#seo)
 6.  [Attributes](#attributes)
+7.  [Meta Tags](#meta)
 00. [Sources](#sources)
 
 <a name="principles"></a>
@@ -15,6 +16,7 @@
 
 * HTML is content-driven markup language. The elements being used should reflect the content, its intention and its behavior as much as possible.
 * Use soft-tabs with a two space indent. Spaces are the only way to guarantee code renders the same in any person’s environment.
+* Organize all css in the `<head>` and javascript at the bottom of the `body` tag.
 * Paragraphs of text should always be placed in a <p> tag. Never use multiple <br> tags.
 * Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
 * Do not use closing slashs on self closing elements: `<br>`, `<hr>`, `<img>`
@@ -69,6 +71,41 @@
 
 a#id-1.class-1 href="link-1" title="title-1"
 a#id-2.class-2 href="link-2" title="title-2"
+```
+
+<a name="meta"></a>
+## 6. Meta Tags
+
+* In general, include all of the following meta tags including all favicon formats.
+```
+head
+  meta charset="utf-8"
+  meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+  title = "Page Title"
+  meta name="description" content="Pge Description"
+  meta name="copyright" content="(c) 2015 example site"
+  meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0"
+  meta name="apple-mobile-web-app-capable" content="yes"
+  meta name="apple-mobile-web-app-status-bar-style" content="black"
+  = favicon_tag "/apple-touch-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"
+  = favicon_tag "/apple-touch-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"
+  = favicon_tag "/apple-touch-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"
+  = favicon_tag "/apple-touch-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"
+  = favicon_tag "/apple-touch-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"
+  = favicon_tag "/apple-touch-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"
+  = favicon_tag "/apple-touch-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"
+  = favicon_tag "/apple-touch-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"
+  = favicon_tag "/apple-touch-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"
+  = favicon_tag "/favicon-32x32.png", rel: "icon", sizes: "32x32"
+  = favicon_tag "/favicon-194x194.png", rel: "icon", sizes: "194x194"
+  = favicon_tag "/favicon-96x96.png", rel: "icon", sizes: "96x96"
+  = favicon_tag "/android-chrome-192x192.png", rel: "icon", sizes: "192x192"
+  = favicon_tag "/favicon-16x16.png", rel: "icon", sizes: "16x16"
+  link rel="manifest" href="/manifest.json"
+  meta name="msapplication-TileColor" content="#ffffff"
+  meta name="msapplication-TileImage" content="/mstile-144x144.png"
+  meta name="theme-color" content="#ffffff"
+  = stylesheet_link_tag "examplecss"
 ```
 
 <a name="sources"></a>
