@@ -7,7 +7,7 @@
 3.  [Layout](#layout)
 4.  [Accessibility](#accessibility)
 5.  [Seo](#seo)
-5.  [Attributes](#attributes)
+6.  [Attributes](#attributes)
 00. [Sources](#sources)
 
 <a name="principles"></a>
@@ -18,7 +18,6 @@
 * Paragraphs of text should always be placed in a <p> tag. Never use multiple <br> tags.
 * Items in list form should always be in <ul>, <ol>, or <dl>. Never use a set of <div> or <p>.
 * Do not use closing slashs on self closing elements: `<br>, <hr>, <img>`
-* 
 
 <a name="html5"></a>
 ## 2. HTML 5
@@ -40,6 +39,7 @@
 
 * Only use image replacement when absolutely necessary.
 * Always include labels on form elements (even if they need to be hidden).
+* Wrap radios, checkboxes and their text in labels.
 * Include a `tabindex` attribute on all form elements.
 * When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
 * Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
