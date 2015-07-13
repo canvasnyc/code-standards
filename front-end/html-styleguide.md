@@ -5,10 +5,10 @@
 1.  [General Principles](#principles)
 2.  [Layout](#layout)
 3.  [Accessibility](#accessibility)
-4.  [Seo](#seo)
-5.  [Attributes](#attributes)
-6.  [Meta Tags](#meta)
-7.  [Templating Language](#templating)
+4.  [Attributes](#attributes)
+5.  [Meta Tags](#meta)
+6.  [Templating Language](#templating)
+7.  [Seo](#seo)
 0.  [Sources](#sources)
 
 <a name="principles"></a>
@@ -42,18 +42,6 @@
 * When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
 * Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
 * Make important hidden text available to screen readers.
-
-<a name="seo"></a>
-## SEO
-
-* Never use images in place of important text.
-* Always print out hidden text inside elements that use image replacement.
-* Be sure to include a live text `h1` tag on every page with relavant contextual copy.
-* Do not wrap important content inside JS (exceptions based on framework).
-* Always include a relavant `title` meta tag.
-* When formatting title meta tags always include the site name after the page description, not before. `<meta name="title" content="Contact Us | Canvas">`
-* Always include a relavant `desc` meta tag.
-* When necessary use [schema](http://schema.org/) to enhance SEO.
 
 <a name="attributes"></a>
 ## Attributes
@@ -115,6 +103,18 @@ head
 * Always use [Middleman](https://middlemanapp.com/) for static sites/sites with no back end.
 * Use [Jade](http://naltatis.github.io/jade-syntax-docs/) in all node based environments.
 * Do not mix preprocessing languages and remain consistent.
+
+<a name="seo"></a>
+## SEO
+
+* Never use images in place of important text.
+* Always print out hidden text inside elements that use image replacement.
+* Be sure to include a live text `h1` tag on every page with relavant contextual copy.
+* Do not wrap important content inside JS (exceptions based on framework).
+* Always include a relavant `title` meta tag.
+* When formatting title meta tags always include the site name after the page description, not before. `<meta name="title" content="Contact Us | Canvas">`
+* Always include a relavant `desc` meta tag.
+* When necessary use [schema](http://schema.org/) to enhance SEO.
 
 <a name="sources"></a>
 ## Sources
