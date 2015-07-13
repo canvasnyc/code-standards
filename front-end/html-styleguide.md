@@ -75,7 +75,7 @@ a#id-2.class-2 href="link-2" title="title-2"
 ```
 
 <a name="meta"></a>
-## 6. Meta Tags
+## 7. Meta Tags
 
 * In general, include all of the following meta tags including all favicon formats.
 ```
