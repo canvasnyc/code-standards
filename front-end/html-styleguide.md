@@ -9,7 +9,7 @@
 5.  [Attributes](#attributes)
 6.  [Meta Tags](#meta)
 7.  [Templating Language](#templating)
-0. [Sources](#sources)
+0.  [Sources](#sources)
 
 <a name="principles"></a>
 ## General Principles
@@ -30,7 +30,7 @@
 * Use HTML5 elements, and generic `<div>`s for layout.
 * Do not use tables for anything that isn't tabular data.
 * Take advantage of the default behavior of generic `<div>` and `<span>` elements (i.e., don't put `display: inline` on a `div` and don't put `display: block` on a `span`). Likewise, don't redeclare these values.
-* Always consider the responsive behavior and flow of elements when structuring markup. Not even CSS can override the order of HTML elements.
+* Always consider the responsive behavior and flow of elements when structuring markup.
   
 <a name="accessibility"></a>
 ## Accessibility
@@ -46,10 +46,8 @@
 <a name="seo"></a>
 ## SEO
 
-* Use `alt` attributes on all images.
 * Never use images in place of important text.
 * Always print out hidden text inside elements that use image replacement.
-* Use `title` attributes on all links.
 * Be sure to include a live text `h1` tag on every page with relavant contextual copy.
 * Do not wrap important content inside JS (exceptions based on framework).
 * Always include a relavant `title` meta tag.
@@ -60,6 +58,12 @@
 <a name="attributes"></a>
 ## Attributes
 
+* Use `alt` attributes on all images.
+* Use `title` attributes on all links.
+* Avoid using IDs as selectors.
+* Prefix javascript specific selectors with "js-". `<div class="js-slide-toggle"></div>`
+* Never use inline css.
+* 
 * Add attributes in a consistent order to improve readability.
 ```
 <a href="link-1" id="id-1" class="class-1" title="title-1">Link 1</a>
