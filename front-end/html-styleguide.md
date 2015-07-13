@@ -3,34 +3,29 @@
 ## Table of contents
 
 1.  [General Principles](#principles)
-2.  [HTML5] (#html5)
-3.  [Layout](#layout)
-4.  [Accessibility](#accessibility)
-5.  [Seo](#seo)
-6.  [Attributes](#attributes)
-7.  [Meta Tags](#meta)
-8.  [Templating Language](#templating)
-00. [Sources](#sources)
+2.  [Layout](#layout)
+3.  [Accessibility](#accessibility)
+4.  [Seo](#seo)
+5.  [Attributes](#attributes)
+6.  [Meta Tags](#meta)
+7.  [Templating Language](#templating)
+0. [Sources](#sources)
 
 <a name="principles"></a>
-## 1. General Principles
+## General Principles
 
 * HTML is content-driven markup language. The elements being used should reflect the content, its intention and its behavior as much as possible.
 * Use soft-tabs with a two space indent. Spaces are the only way to guarantee code renders the same in any person’s environment.
 * Organize all css in the `<head>` and javascript at the bottom of the `body` tag.
+* Always use the HTML5 doctype: `<!doctype html>`
+* Use HTML5 semantic elements when appropriate. If in doubt, refer to [HTML5 Doctor](http://html5doctor.com/element-index/) for a description of elements.
+* Use section and article tags based on correct semantics and never interchangeably.
 * Paragraphs of text should always be placed in a `<p>` tag. Never use multiple `<br>` tags.
 * Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
 * Do not use closing slashs on self closing elements: `<br>`, `<hr>`, `<img>`
 
-<a name="html5"></a>
-## 2. HTML 5
-
-* Always use the HTML5 doctype: `<!doctype html>`
-* Use HTML5 semantic elements when appropriate. If in doubt, refer to [HTML5 Doctor](http://html5doctor.com/element-index/) for a description of elements.
-* Use section and article tags based on correct semantics and never interchangeably.
-
 <a name="layout"></a>
-## 3. Layout
+## Layout
 
 * Use HTML5 elements, and generic `<div>`s for layout.
 * Do not use tables for anything that isn't tabular data.
@@ -38,7 +33,7 @@
 * Always consider the responsive behavior and flow of elements when structuring markup. Not even CSS can override the order of HTML elements.
   
 <a name="accessibility"></a>
-## 4. Accessibility
+## Accessibility
 
 * Only use image replacement when absolutely necessary.
 * Always include labels on form elements (even if they need to be hidden).
@@ -49,7 +44,7 @@
 * Make important hidden text available to screen readers.
 
 <a name="seo"></a>
-## 5. SEO
+## SEO
 
 * Use `alt` attributes on all images.
 * Never use images in place of important text.
@@ -63,7 +58,7 @@
 * When necessary use [schema](http://schema.org/) to enhance SEO.
 
 <a name="attributes"></a>
-## 6. Attributes
+## Attributes
 
 * Add attributes in a consistent order to improve readability.
 ```
@@ -75,7 +70,7 @@ a#id-2.class-2 href="link-2" title="title-2"
 ```
 
 <a name="meta"></a>
-## 7. Meta Tags
+## Meta Tags
 
 * In general, include all of the following meta tags including all favicon formats.
 ```
@@ -110,7 +105,7 @@ head
 ```
 
 <a name="templating"></a>
-## 8. Technology
+## Technology
 
 * Always use [Slim](http://slim-lang.com/) in ruby/rails environments including [Middleman](https://middlemanapp.com/).
 * Always use [Middleman](https://middlemanapp.com/) for static sites/sites with no back end.
@@ -118,7 +113,7 @@ head
 * Do not mix preprocessing languages and remain consistent.
 
 <a name="sources"></a>
-## 00. Sources
+## Sources
 
 * [HTML5 Doctor Element Index](http://html5doctor.com/element-index/)
 * [Favicon Format Generator](http://realfavicongenerator.net/)
