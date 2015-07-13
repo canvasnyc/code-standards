@@ -9,6 +9,7 @@
 5.  [Seo](#seo)
 6.  [Attributes](#attributes)
 7.  [Meta Tags](#meta)
+8.  [Templating Language](#templating)
 00. [Sources](#sources)
 
 <a name="principles"></a>
@@ -107,6 +108,14 @@ head
   meta name="theme-color" content="#ffffff"
   = stylesheet_link_tag "examplecss"
 ```
+
+<a name="templating"></a>
+## 8. Technology
+
+* Always use [Slim](http://slim-lang.com/) in ruby/rails environments including [Middleman](https://middlemanapp.com/).
+* Always use [Middleman](https://middlemanapp.com/) for static sites/site with no back end.
+* Use [Jade](http://naltatis.github.io/jade-syntax-docs/) in all node based environments.
+* Do not mix preprocessing languages and remain consistent.
 
 <a name="sources"></a>
 ## 00. Sources
