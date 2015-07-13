@@ -2,20 +2,23 @@
 
 ## Table of contents
 
-1.  [Principles](#principles)
+1.  [General Principles](#principles)
 2.  [HTML5] (#html5)
 3.  [Layout](#layout)
 4.  [Accessibility](#accessibility)
 5.  [Seo](#seo)
-5.  [Formatting](#formatting)
+5.  [Attributes](#attributes)
 00. [Sources](#sources)
 
 <a name="principles"></a>
-## 1. Principles
+## 1. General Principles
 
 * HTML is content-driven markup language. The elements being used should reflect the content, its intention and its behavior as much as possible.
-* Strive to write clear code such that someone with little or no understanding of programming could view it and have a reasonable idea of what the content is.
-
+* Use soft-tabs with a two space indent. Spaces are the only way to guarantee code renders the same in any person’s environment.
+* Paragraphs of text should always be placed in a <p> tag. Never use multiple <br> tags.
+* Items in list form should always be in <ul>, <ol>, or <dl>. Never use a set of <div> or <p>.
+* Do not use closing slashs on self closing elements: `<br>, <hr>, <img>`
+* 
 
 <a name="html5"></a>
 ## 2. HTML 5
@@ -56,8 +59,8 @@
 * Always include a relavant `desc` meta tag.
 * When necessary use [schema](http://schema.org/) to enhance SEO.
 
-<a name="formatting"></a>
-## 6. Formatting
+<a name="attributes"></a>
+## 6. Attributes
 
 * Add attributes in a consistent order to improve readability.
 ```
