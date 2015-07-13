@@ -16,8 +16,8 @@
 * HTML is content-driven markup language. The elements being used should reflect the content, its intention and its behavior as much as possible.
 * Use soft-tabs with a two space indent. Spaces are the only way to guarantee code renders the same in any person’s environment.
 * Paragraphs of text should always be placed in a <p> tag. Never use multiple <br> tags.
-* Items in list form should always be in <ul>, <ol>, or <dl>. Never use a set of <div> or <p>.
-* Do not use closing slashs on self closing elements: `<br>, <hr>, <img>`
+* Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
+* Do not use closing slashs on self closing elements: `<br>`, `<hr>`, `<img>`
 
 <a name="html5"></a>
 ## 2. HTML 5
