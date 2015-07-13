@@ -3,11 +3,12 @@
 ## Table of contents
 
 1.  [General Principles](#principles)
-2.  [Templating Languages](#templating)
-3.  [Meta Tags](#meta)
-4.  [Attributes](#attributes)
-5.  [Accessibility](#accessibility)
-6.  [Seo](#seo)
+2.  [Semantics](#semantics)
+3.  [Templating Languages](#templating)
+4.  [Meta Tags](#meta)
+5.  [Attributes](#attributes)
+6.  [Accessibility](#accessibility)
+7.  [Seo](#seo)
 0.  [Sources](#sources)
 
 <a name="principles"></a>
@@ -15,8 +16,15 @@
 
 * HTML is content-driven markup language. The elements being used should reflect the content, its intention and its behavior as much as possible.
 * Use soft-tabs with a two space indent. Spaces are the only way to guarantee code renders the same in any person’s environment.
+* Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
 * Organize all css in the `<head>` and javascript at the bottom of the `body` tag.
+* Always consider responsive behavior and the flow of elements when structuring markup.
+
+<a name="semantics"></a>
+## Semantics
+
 * Always use the HTML5 doctype: `<!doctype html>`
+* Include the lang attribute on the opening HTML tag.
 * Use HTML5 semantic elements when appropriate. If in doubt, refer to [HTML5 Doctor](http://html5doctor.com/element-index/) for a description of elements.
 * Use section and article tags based on correct semantics and never interchangeably.
 * Paragraphs of text should always be placed in a `<p>` tag. Never use multiple `<br>` tags.
@@ -24,7 +32,6 @@
 * Do not use closing slashs on self closing elements: `<br>`, `<hr>`, `<img>`
 * Do not use tables for anything that isn't tabular data.
 * Take advantage of the default behavior of generic `<div>` and `<span>` elements (i.e., don't put `display: inline` on a `div` and don't put `display: block` on a `span`). Likewise, don't redeclare these values.
-* Always consider the responsive behavior and flow of elements when structuring markup.
 
 <a name="templating"></a>
 ## Technology
@@ -92,7 +99,6 @@ head
 * Wrap radios, checkboxes and their text in labels.
 * Include a `tabindex` attribute on all form elements.
 * When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
-* Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
 * Make important hidden text available to screen readers.
 
 <a name="seo"></a>
