@@ -122,3 +122,6 @@ head
 
 * [HTML5 Doctor Element Index](http://html5doctor.com/element-index/)
 * [Favicon Format Generator](http://realfavicongenerator.net/)
+* [Slim](http://slim-lang.com/)
+* [Middleman](https://middlemanapp.com/)
+* [Jade](http://naltatis.github.io/jade-syntax-docs/)
