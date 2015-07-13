@@ -3,12 +3,11 @@
 ## Table of contents
 
 1.  [General Principles](#principles)
-2.  [Layout](#layout)
-3.  [Accessibility](#accessibility)
+2.  [Templating Languages](#templating)
+3.  [Meta Tags](#meta)
 4.  [Attributes](#attributes)
-5.  [Meta Tags](#meta)
-6.  [Templating Language](#templating)
-7.  [Seo](#seo)
+5.  [Accessibility](#accessibility)
+6.  [Seo](#seo)
 0.  [Sources](#sources)
 
 <a name="principles"></a>
@@ -23,40 +22,17 @@
 * Paragraphs of text should always be placed in a `<p>` tag. Never use multiple `<br>` tags.
 * Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
 * Do not use closing slashs on self closing elements: `<br>`, `<hr>`, `<img>`
-
-<a name="layout"></a>
-## Layout
-
-* Use HTML5 elements, and generic `<div>`s for layout.
 * Do not use tables for anything that isn't tabular data.
 * Take advantage of the default behavior of generic `<div>` and `<span>` elements (i.e., don't put `display: inline` on a `div` and don't put `display: block` on a `span`). Likewise, don't redeclare these values.
 * Always consider the responsive behavior and flow of elements when structuring markup.
-  
-<a name="accessibility"></a>
-## Accessibility
 
-* Only use image replacement when absolutely necessary.
-* Always include labels on form elements (even if they need to be hidden).
-* Wrap radios, checkboxes and their text in labels.
-* Include a `tabindex` attribute on all form elements.
-* When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
-* Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
-* Make important hidden text available to screen readers.
+<a name="templating"></a>
+## Technology
 
-<a name="attributes"></a>
-## Attributes
-
-* Use `alt` attributes on all images.
-* Use `title` attributes on all links.
-* Avoid using IDs as selectors.
-* Prefix javascript specific selectors with "js-". `<div class="js-slide-toggle"></div>`
-* Never use inline css.
-* 
-* Add attributes in a consistent order to improve readability.
-```
-<a href="link-1" id="id-1" class="class-1" title="title-1">Link 1</a>
-<a href="link-2" id="id-2" class="class-2" title="title-2">Link 2</a>
-```
+* Always use [Slim](http://slim-lang.com/) in ruby/rails environments including [Middleman](https://middlemanapp.com/).
+* Always use [Middleman](https://middlemanapp.com/) for static sites/sites with no back end.
+* Use [Jade](http://naltatis.github.io/jade-syntax-docs/) in all node based environments.
+* Do not mix preprocessing languages and remain consistent.
 
 <a name="meta"></a>
 ## Meta Tags
@@ -93,13 +69,31 @@ head
   = stylesheet_link_tag "examplecss"
 ```
 
-<a name="templating"></a>
-## Technology
+<a name="attributes"></a>
+## Attributes
 
-* Always use [Slim](http://slim-lang.com/) in ruby/rails environments including [Middleman](https://middlemanapp.com/).
-* Always use [Middleman](https://middlemanapp.com/) for static sites/sites with no back end.
-* Use [Jade](http://naltatis.github.io/jade-syntax-docs/) in all node based environments.
-* Do not mix preprocessing languages and remain consistent.
+* Use `alt` attributes on all images.
+* Use `title` attributes on all links.
+* Avoid using IDs as selectors.
+* Prefix javascript specific selectors with "js-". `<div class="js-slide-toggle"></div>`
+* Never use inline css.
+* Clearly name data attributes according to their content and purpose.
+* Add attributes in a consistent order to improve readability.
+```
+<a href="link-1" id="id-1" class="class-1" title="title-1">Link 1</a>
+<a href="link-2" id="id-2" class="class-2" title="title-2">Link 2</a>
+```
+  
+<a name="accessibility"></a>
+## Accessibility
+
+* Only use image replacement when absolutely necessary.
+* Always include labels on form elements (even if they need to be hidden).
+* Wrap radios, checkboxes and their text in labels.
+* Include a `tabindex` attribute on all form elements.
+* When possible adjust for visually impaired users: [testing tool](https://chrome.google.com/webstore/search/NoCoffee%20Vision%20Simulator?hl=en&gl=US).
+* Only add a new tag when absolutely necessary or required by semantics to avoid over-nesting.
+* Make important hidden text available to screen readers.
 
 <a name="seo"></a>
 ## SEO
