@@ -56,9 +56,6 @@
 ```
 <a href="link-1" id="id-1" class="class-1" title="title-1">Link 1</a>
 <a href="link-2" id="id-2" class="class-2" title="title-2">Link 2</a>
-
-a#id-1.class-1 href="link-1" title="title-1"
-a#id-2.class-2 href="link-2" title="title-2"
 ```
 
 <a name="meta"></a>
@@ -70,7 +67,7 @@ head
   meta charset="utf-8"
   meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
   title = "Page Title"
-  meta name="description" content="Pge Description"
+  meta name="description" content="Page Description"
   meta name="copyright" content="(c) 2015 example site"
   meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0"
   meta name="apple-mobile-web-app-capable" content="yes"
