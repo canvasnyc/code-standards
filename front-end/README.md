@@ -3,9 +3,11 @@
 ## Table of Contents
 
 1.  [Principles](#principles)
+2.  [Technology Standards](#technology)
+
 
 <a name="principles"></a>
-## 1. Principles
+## Principles
 
 > "Part of being a good steward to a successful project is realizing that
   writing code for yourself is a Bad Idea™. If thousands of people are using
@@ -22,16 +24,18 @@
 * Carefully re-evaluate these standards when better systems and conventions are available.
 * If it is not possible to defend and support a standard, it should be removed.
 
+
+<a name="technology"></a>
 ## Technology Standards
 
-### HTML
+#### HTML
 * Slim (Rails Stack)
 * Jade (Node Stack)
 
-### CSS
+#### CSS
 * SCSS
 
-### JavaScript
+#### JavaScript
 * CoffeeScript
 * React
 * Meteor (inly when full-stack JS is necessary)
