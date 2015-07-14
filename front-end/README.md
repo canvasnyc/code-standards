@@ -38,4 +38,7 @@
 #### JavaScript
 * CoffeeScript
 * React
-* Meteor (inly when full-stack JS is necessary)
+* Meteor (Only when full-stack JS is necessary)
+
+#### Static Site Generators
+* Middleman
