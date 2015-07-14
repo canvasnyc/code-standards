@@ -1,3 +1,12 @@
 # Front-end Best Practices & Guidelines
 
-This file is for more general best practices and philosophies. For language-specific writing guidelines, check out the styleguide for that language.
+## Technology Standards
+### HTML
+* Slim (Rails Stack)
+* Jade (Node Stack)
+### CSS
+* SCSS
+### Java Script
+* CoffeeScript
+* React
+* Meteor (when js is needed on full-stack)
