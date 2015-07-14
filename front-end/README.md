@@ -9,7 +9,7 @@
 ### CSS
 * SCSS
 
-### Java Script
+### JavaScript
 * CoffeeScript
 * React
 * Meteor (when full-stack JS is necessary)
