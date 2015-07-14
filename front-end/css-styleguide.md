@@ -3,42 +3,20 @@
 
 ## Table of contents
 
-1.  [Principles](#principles)
-2.  [Whitespace](#whitespace)
-3.  [Formatting](#formatting)
-4.  [Naming Conventions](#naming-conventions)
-5.  [Comments](#comments)
-6.  [Overrides](#overrides)
-7.  [Responsive](#responsive)
-8.  [SCSS](#scss)
-9.  [File Organization](#organization)
-10. [Resets](#resets)
-11. [Sources](#sources)
-
-
-<a name="principles"></a>
-## 1. Principles
-
-
-> "Part of being a good steward to a successful project is realizing that
-  writing code for yourself is a Bad Idea™. If thousands of people are using
-  your code, then write your code for maximum clarity, not your personal
-  preference of how to get clever within the spec." - Idan Gazit
-
-
-* Strive to create loosely coupled, highly reusable code.
-* Always keep extensibility in mind.
-* Maintain code that is easy read and understand.
-* All code in any code-base should look like a single person wrote it, even on a team 
-  with many contributors.
-* When trying to fix an issue, consider removing code before adding to it.
-* It is important to strictly enforce the agreed-upon standards.
-* Carefully re-evaluate these standards when better systems and conventions are available.
-* If it is not possible to defend and support a standard, it should be removed.
+1.  [Whitespace](#whitespace)
+2.  [Formatting](#formatting)
+3.  [Naming Conventions](#naming-conventions)
+4.  [Comments](#comments)
+5.  [Overrides](#overrides)
+6.  [Responsive](#responsive)
+7.  [SCSS](#scss)
+8.  [File Organization](#organization)
+9. [Resets](#resets)
+10. [Sources](#sources)
 
 
 <a name="whitespace"></a>
-## 2. Whitespace
+## Whitespace
 
 * Configure your IDE to use soft-tabs with a two space indent. Spaces guarantee code 
   will renders the same all environment.
@@ -52,7 +30,7 @@
   space should be included after the opening brace and before the closing brace.
 
 <a name="formatting"></a>
-## 3. Formatting
+## Formatting
 
 * Always use #hex color codes, unless using rgb/rgba.
 * Do not specify units for 0 values. `margin: 0;`
@@ -98,7 +76,7 @@
 
 
 <a name="naming-conventions"></a>
-## 4. Naming Conventions
+## Naming Conventions
 
 * Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming conventions.
 * Provide clear names for your selectors.
@@ -113,7 +91,7 @@
 
 
 <a name="comments"></a>
-## 5. Comments
+## Comments
 
 * Well commented code is extremely important. Take time provide information about your 
   code, it’s limitations, and any non-obvious information.
@@ -166,7 +144,7 @@
 ```
 
 <a name="overrides"></a>
-## 6. Overrides
+## Overrides
 
 * Avoid using `!important` unless __absolutely necessary__.
 * Try to work with the cascade and avoid unecessary overrides.
@@ -177,7 +155,7 @@
 
 
 <a name="responsive"></a>
-## 7. Responsive
+## Responsive
 
 * Always build mobile first. This will greatly reduce the weight on mobile and 
   significantly reduces necessary overrides through media queries.
@@ -224,7 +202,7 @@ $breakpoints: (
 ```
 
 <a name="scss"></a>
-## 8. SCSS
+## SCSS
 * Use SCSS syntax and never SASS.
 * Avoid unnecessary nesting.
 * Keep your nesting limited to 3 levels.
@@ -240,7 +218,7 @@ $breakpoints: (
 
 
 <a name="organization"></a>
-## 9. File Organization
+## File Organization
 
 #### Folder Structure:
 
@@ -297,7 +275,7 @@ sass/
 
 
 <a name="resets"></a>
-## 10. Resets
+## Resets
 
 * Include [normalize](http://necolas.github.io/normalize.css/) , or equivalent, in every project as a foundation.
 * When possible specify `box-sizing: border-box` as a global reset.
@@ -320,7 +298,7 @@ html {
 
 
 <a name="sources"></a>
-## 11. Sources
+## Sources
 
 
 #### Style Guide Examples
