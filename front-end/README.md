@@ -12,4 +12,4 @@
 ### JavaScript
 * CoffeeScript
 * React
-* Meteor (when full-stack JS is necessary)
+* Meteor (inly when full-stack JS is necessary)
