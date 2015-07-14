@@ -29,7 +29,7 @@
 ## Technology Standards
 
 #### HTML
-* Slim (Rails Stack)
+* Slim (Ruby Stack)
 * Jade (Node Stack)
 
 #### CSS
