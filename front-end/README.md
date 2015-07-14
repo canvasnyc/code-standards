@@ -34,7 +34,7 @@
 
 #### CSS
 * SCSS
-* Twitter Bootstrap (for CMSs & Prototyping only)
+* Twitter Bootstrap (Strictly for CMSs & Prototyping)
 
 #### JavaScript
 * CoffeeScript
