@@ -94,7 +94,7 @@ head
 <a name="accessibility"></a>
 ## Accessibility
 
-* Only use image replacement when absolutely necessary.
+* Always use live text when possible.
 * Always include labels on form elements (even if they need to be hidden).
 * Wrap radios, checkboxes and their text in labels.
 * Include a `tabindex` attribute on all form elements.
