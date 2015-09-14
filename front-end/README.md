@@ -47,8 +47,8 @@
 * Primary UI Framework: **ReactJS**
 
 ####  * When Rails is not Avialable
-* Compiler: **Webpack** (if rails is not available)
-* Automator: **Gulp** (if rails is not available)
+* Compiler: **Webpack**
+* Automator: **Gulp**
 
 <a name="static-sites"></a>
 ##Static Site Frameworks
