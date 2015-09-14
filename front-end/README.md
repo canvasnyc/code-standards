@@ -45,6 +45,7 @@
 * Syntax: **ES6**
 * Dom Manipulation Framework: **jQuery**
 * Primary UI Framework: **ReactJS**
+
 ###When Rails is not Avialable
 * Compiler: **Webpack** (if rails is not available)
 * Automator: **Gulp** (if rails is not available)
