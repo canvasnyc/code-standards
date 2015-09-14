@@ -38,7 +38,7 @@
 <a name="html"></a>
 ##HTML Standards
 * Preprocessor: **Slim**
-* Secondary Preprocessor: **Jade** (node stack)
+* Node Preprocessor: **Jade**
 * Style Guide: [View Guide](https://github.com/canvasnyc/code-standards/blob/master/front-end/html-styleguide.md)
 
 <a name="js"></a>
