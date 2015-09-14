@@ -3,7 +3,9 @@
 ## Table of Contents
 
 1.  [Principles](#principles)
-2.  [Technology Standards](#technology)
+2.  [CSS Standards](#css)
+3.  [HTML Standards](#html)
+4.  [JS Standards](#js)
 
 
 <a name="principles"></a>
@@ -25,20 +27,20 @@
 * If it is not possible to defend and support a standard, it should be removed.
 
 
-<a name="technology"></a>
-## Technology Standards
-
-####CSS
+<a name="css"></a>
+##CSS Standards
 * Preprocessor: SCSS
 * Library: Compass
 * Resets: Normalize https://necolas.github.io/normalize.css/
 * Feature Testing: Modernizr https://modernizr.com/
 
-####HTML
+<a name="html"></a>
+##HTML Standards
 * Preprocessor: Slim
 * Secondary Preprocessor: Jade (node stack)
 
-####JavaScript
+<a name="js"></a>
+##JavaScript Standards
 * Preprocessor: Babel
 * Syntax: ES6
 * Compiler: Webpack (if rails is not available)
