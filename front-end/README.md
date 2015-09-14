@@ -6,7 +6,7 @@
 2.  [CSS Standards](#css)
 3.  [HTML Standards](#html)
 4.  [JS Standards](#js)
-
+5.  [Static Site Generators](#static-sites)
 
 <a name="principles"></a>
 ## Principles
@@ -43,8 +43,12 @@
 ##JavaScript Standards
 * Preprocessor: **Babel**
 * Syntax: **ES6**
+* Dom Manipulation Framework: **jQuery**
+* Primary UI Framework: **ReactJS**
+###When Rails is not Avialable
 * Compiler: **Webpack** (if rails is not available)
 * Automator: **Gulp** (if rails is not available)
-* Dom Manipulation Framework: **jQuery**
-* Primary Framework: **ReactJS**
-* Secondary Framework: **Meteor** (only when a full JS stack is necessary)
+
+<a name="static-sites"></a>
+##Static Site Frameworks
+* Middleman
