@@ -1,4 +1,4 @@
-# Front-end Best Practices & Guidelines
+# Front-end Best Practices & Standards
 
 ## Table of Contents
 
