@@ -32,7 +32,6 @@
 * Preprocessor: **SCSS**
 * Library: **Compass**
 * Resets: **Normalize** https://necolas.github.io/normalize.css/
-* Feature Testing: **Modernizr** https://modernizr.com/
 * Style Guide: [View Guide](https://github.com/canvasnyc/code-standards/blob/master/front-end/css-styleguide.md)
 
 <a name="html"></a>
@@ -56,3 +55,8 @@
 ##Static Site Generators
 * Middleman
 * Webpack
+
+<a name="static-sites"></a>
+##Important Plugins & Libraries
+* **Fastclick**: removes 300ms delay on touch devices. [source](https://github.com/ftlabs/fastclick)
+* **Modernizr**: feature testing [source](https://modernizr.com/)
