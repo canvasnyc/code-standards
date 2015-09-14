@@ -28,18 +28,21 @@
 <a name="technology"></a>
 ## Technology Standards
 
-#### HTML
-* Slim (Ruby Stack)
-* Jade (Node Stack)
+####CSS
+* Preprocessor: SCSS
+* Library: Compass
+* Resets: Normalize https://necolas.github.io/normalize.css/
+* Feature Testing: Modernizr https://modernizr.com/
 
-#### CSS
-* SCSS
-* Twitter Bootstrap (Strictly for CMSs & Prototyping)
+####HTML
+* Preprocessor: Slim
+* Secondary Preprocessor: Jade (node stack)
 
-#### JavaScript
-* CoffeeScript
-* React
-* Meteor (Only when full-stack JS is necessary)
-
-#### Static Site Generators
-* Middleman
+####JavaScript
+* Preprocessor: Babel
+* Syntax: ES6
+* Compiler: Webpack (if rails is not available)
+* Automator: Gulp (if rails is not available)
+* Dom Manipulation Framework: jQuery
+* Primary Framework: ReactJS
+* Secondary Framework: Meteor (only when a full JS stack is necessary)
