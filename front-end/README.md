@@ -33,6 +33,7 @@
 * Library: **Compass**
 * Resets: **Normalize** https://necolas.github.io/normalize.css/
 * Feature Testing: **Modernizr** https://modernizr.com/
+* Style Guide: [View Guide](https://github.com/canvasnyc/code-standards/blob/master/front-end/css-styleguide.md)
 
 <a name="html"></a>
 ##HTML Standards
