@@ -46,7 +46,7 @@
 * Preprocessor: **Babel**
 * Syntax: **ES6**
 * Dom Manipulation Framework: **jQuery**
-* Primary UI Framework: **ReactJS**
+* UI Framework: **ReactJS**
 
 ####  * When Rails is *Not* Avialable
 * Compiler: **Webpack**
