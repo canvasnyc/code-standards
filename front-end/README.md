@@ -53,5 +53,6 @@
 * Automator: **Gulp**
 
 <a name="static-sites"></a>
-##Static Site Frameworks
+##Static Site Generator
 * Middleman
+* Webpack
