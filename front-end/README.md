@@ -48,7 +48,7 @@
 * Dom Manipulation Framework: **jQuery**
 * Primary UI Framework: **ReactJS**
 
-####  * When Rails is not Avialable
+####  * When Rails is __Not__ Avialable
 * Compiler: **Webpack**
 * Automator: **Gulp**
 
