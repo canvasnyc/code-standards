@@ -57,6 +57,7 @@
 * Webpack
 
 <a name="static-sites"></a>
-##Important Plugin & Library Reference
-* **Fastclick**: removes 300ms delay on touch devices. [source](https://github.com/ftlabs/fastclick)
+## Useful Plugin & Library Reference
+* **Fastclick**: removes 300ms delay on touch devices [source](https://github.com/ftlabs/fastclick)
 * **Modernizr**: feature testing [source](https://modernizr.com/)
+* **HammerJS**: adds touch gestures [source](http://hammerjs.github.io/)
