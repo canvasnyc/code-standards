@@ -29,22 +29,22 @@
 
 <a name="css"></a>
 ##CSS Standards
-* Preprocessor: *SCSS*
-* Library: *Compass*
-* Resets: *Normalize* https://necolas.github.io/normalize.css/
-* Feature Testing: *Modernizr* https://modernizr.com/
+* Preprocessor: **SCSS**
+* Library: **Compass**
+* Resets: **Normalize** https://necolas.github.io/normalize.css/
+* Feature Testing: **Modernizr** https://modernizr.com/
 
 <a name="html"></a>
 ##HTML Standards
-* Preprocessor: *Slim*
-* Secondary Preprocessor: *Jade* (node stack)
+* Preprocessor: **Slim**
+* Secondary Preprocessor: **Jade** (node stack)
 
 <a name="js"></a>
 ##JavaScript Standards
-* Preprocessor: *Babel*
-* Syntax: *ES6*
-* Compiler: *Webpack* (if rails is not available)
-* Automator: *Gulp* (if rails is not available)
-* Dom Manipulation Framework: *jQuery*
-* Primary Framework: *ReactJS*
-* Secondary Framework: *Meteor* (only when a full JS stack is necessary)
+* Preprocessor: **Babel**
+* Syntax: **ES6**
+* Compiler: **Webpack** (if rails is not available)
+* Automator: **Gulp** (if rails is not available)
+* Dom Manipulation Framework: **jQuery**
+* Primary Framework: **ReactJS**
+* Secondary Framework: **Meteor** (only when a full JS stack is necessary)
