@@ -7,6 +7,7 @@
 3.  [HTML Standards](#html)
 4.  [JS Standards](#js)
 5.  [Static Site Generators](#static-sites)
+6.  [Useful Plugin & Library Reference](#plugins)
 
 <a name="principles"></a>
 ## Principles
@@ -55,7 +56,7 @@
 ##Static Site Generators
 * Middleman
 
-<a name="static-sites"></a>
+<a name="plugins"></a>
 ## Useful Plugin & Library Reference
 * **Fastclick**: removes 300ms delay on touch devices [source](https://github.com/ftlabs/fastclick)
 * **Modernizr**: feature testing [source](https://modernizr.com/)
