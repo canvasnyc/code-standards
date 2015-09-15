@@ -54,7 +54,6 @@
 <a name="static-sites"></a>
 ##Static Site Generators
 * Middleman
-* Webpack
 
 <a name="static-sites"></a>
 ## Useful Plugin & Library Reference
