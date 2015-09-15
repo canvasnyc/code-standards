@@ -54,7 +54,7 @@
 
 <a name="static-sites"></a>
 ##Static Site Generators
-* Middleman
+* **Middleman**
 
 <a name="plugins"></a>
 ## Useful Plugin & Library Reference
