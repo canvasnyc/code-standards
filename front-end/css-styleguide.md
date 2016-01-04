@@ -95,10 +95,9 @@
 
 * Well commented code is extremely important. Take time provide information about your 
   code, it’s limitations, and any non-obvious information.
-* When possible, use KSS formatting to determine comment formatting and provide a style guide.
 * Always add an introductory comment to all partials to provide clarity about the files 
   contents and purpose.
-* Use hierarchical comments to divide and organize your files.
+* Use consistent, hierarchical comments to divide and organize your files.
 * Try to make comments concise and intuitive.
 * It’s a good idea to configure your editor to provide you with shortcuts to output 
   agreed-upon comment patterns.
