@@ -63,7 +63,10 @@
 * **Fastclick**: removes 300ms delay on touch devices [source](https://github.com/ftlabs/fastclick)
 * **Modernizr**: feature testing [source](https://modernizr.com/)
 * **HammerJS**: adds touch gestures [source](http://hammerjs.github.io/)
+* **VelocityJS**: accelerated JavaScript animations with or without jQuery [source](http://velocityjs.org/)
 * **Waypoints**: useful for events triggered by scroll points [source](http://imakewebthings.com/waypoints/)
+* **Underscore**: great set of utility functions (including debounce and throttle) [source](http://underscorejs.org/)
+
 
 ####  * Common ES6 Polyfills
 * `Array.from()`: Needed for IE11 [source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill)
