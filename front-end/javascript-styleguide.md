@@ -39,7 +39,7 @@
 
 <a name="performance"></a>
 ## Notes on performance
-- use chrome DevTools [timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool)
+- use chrome DevTools [intro to the timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool)
 - caching selectors
 - removing reference to detached elements
 - adding/removing event listeners
