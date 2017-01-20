@@ -39,11 +39,15 @@
 
 <a name="performance"></a>
 ## Notes on performance
+- use chrome DevTools [timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool)
 - caching selectors
 - removing reference to detached elements
 - adding/removing event listeners
 - avoid DOM read/write loops
 - no unused variables
+- throttle and debounce
+- stores measurements and only measure again after a debounced resize event
+  - each measurement forces style recalculation which forces layout
 
 
 <a name="sources"></a>
