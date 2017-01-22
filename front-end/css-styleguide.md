@@ -299,6 +299,7 @@ html {
 
 <a name="performance"></a>
 ## Notes on performance
+
 * Try to stick with simple and clear selectors whenever possible.
 
 #### Example:
@@ -333,6 +334,7 @@ You can take issue with the name of the class, but the job just got a lot simple
 }
 ```
 Browsers have 5 steps in rendering pixels on the screen: JavaScript, Style, Layout, Paint, and Composite. JavaScript and Style are pretty straightforward. Layout is where everything goes and their sizes. Paint is where pixels start to get filled in such as drawing text, borders, colors, images, and shadows. Composite makes sure that everything was layered correctly. Those 4 properties only trigger an update in the composite step while all others either enact a re-paint or a re-layout. If a change is made in any step, all the steps after need to be re-exectued.
+
 * Avoid frequent changes of classes on top level elements such as html and body.
 
 This harkens to the previous topic of how a browser renders a pixel because if you change a class on the body element, it has to go through every child element and make any updates that may reflect the newly added/removed class.
