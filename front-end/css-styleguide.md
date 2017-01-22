@@ -299,9 +299,42 @@ html {
 
 <a name="performance"></a>
 ## Notes on performance
-- simplify selectors
-- animate with transforms and opacity whenever possible (including sprites)
-- avoid frequent changes of classes on top level elements such as html and body
+* Try to stick with simple and clear selectors whenever possible.
+
+#### Example:
+In the simplest case you reference an element in your CSS with just a class:
+```
+.title {
+  /* styles */
+}
+```
+But, as any project grows, it will likely result in more complex CSS, such that you may end up with selectors that look like this:
+```
+.box:nth-last-child(-n+1) .title {
+  /* styles */
+}
+
+```
+In order to know that the styles need to apply the browser has to effectively ask “is this an element with a class of title which has a parent who happens to be the minus nth child plus 1 element with a class of box?” Figuring this out can take a lot of time, depending on the selector used and the browser in question. The intended behavior of the selector could instead be changed to a class:
+```
+.final-box-title {
+  /* styles */
+}
+```
+You can take issue with the name of the class, but the job just got a lot simpler for the browser. In the previous version, in order to know, for example, that the element is the last of its type, the browser must first know everything about all the other elements and whether the are any elements that come after it that would be the nth-last-child, which is potentially a lot more expensive than simply matching up the selector to the element because its class matches. [Source](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+
+* When animating, the 4 properties browsers can animation most cheaply are position, scale, rotation and opacity.
+```
+.animating-item {
+  transform: translate(npx, npx);
+  transform: scale(npx);
+  transform: rotate(ndeg);
+  opacity: 0...1;
+}
+```
+Browsers have 5 steps in rendering pixels on the screen: JavaScript, Style, Layout, Paint, and Composite. JavaScript and Style are pretty straightforward. Layout is where everything goes and their sizes. Paint is where pixels start to get filled in such as drawing text, borders, colors, images, and shadows. Composite makes sure that everything was layered correctly. Those 4 properties only trigger an update in the composite step while all others either enact a re-paint or a re-layout. If a change is made in any step, all the steps after need to be re-exectued.
+* Avoid frequent changes of classes on top level elements such as html and body.
+This harkens to the previous topic of how a browser renders a pixel because if you change a class on the body element, it has to go through every child element and make any updates that may reflect the newly added/removed class.
 
 
 
@@ -324,3 +357,9 @@ html {
 * [SMACSS](http://smacss.com/)
 * [Atomic CSS](http://bradfrostweb.com/blog/post/atomic-web-design/)
 * [OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+
+#### Performance Links
+
+* [High Performance Animations](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+* [CSS Triggers](https://csstriggers.com/)
+* [Rendering Performance](https://developers.google.com/web/fundamentals/performance/rendering/)
