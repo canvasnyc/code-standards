@@ -321,7 +321,7 @@ In order to know that the styles need to apply the browser has to effectively as
   /* styles */
 }
 ```
-You can take issue with the name of the class, but the job just got a lot simpler for the browser. In the previous version, in order to know, for example, that the element is the last of its type, the browser must first know everything about all the other elements and whether the are any elements that come after it that would be the nth-last-child, which is potentially a lot more expensive than simply matching up the selector to the element because its class matches. [Source](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+You can take issue with the name of the class, but the job just got a lot simpler for the browser. In the previous version, in order to know, for example, that the element is the last of its type, the browser must first know everything about all the other elements and whether there are any elements that come after it that would be the nth-last-child, which is potentially a lot more expensive than simply matching up the selector to the element because its class matches. [Source](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
 
 * When animating, the 4 properties browsers can animation most cheaply are position, scale, rotation and opacity.
 ```
@@ -334,6 +334,7 @@ You can take issue with the name of the class, but the job just got a lot simple
 ```
 Browsers have 5 steps in rendering pixels on the screen: JavaScript, Style, Layout, Paint, and Composite. JavaScript and Style are pretty straightforward. Layout is where everything goes and their sizes. Paint is where pixels start to get filled in such as drawing text, borders, colors, images, and shadows. Composite makes sure that everything was layered correctly. Those 4 properties only trigger an update in the composite step while all others either enact a re-paint or a re-layout. If a change is made in any step, all the steps after need to be re-exectued.
 * Avoid frequent changes of classes on top level elements such as html and body.
+
 This harkens to the previous topic of how a browser renders a pixel because if you change a class on the body element, it has to go through every child element and make any updates that may reflect the newly added/removed class.
 
 
