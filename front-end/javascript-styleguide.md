@@ -142,7 +142,7 @@
   ```javascript
   let button = document.getElementById('button');
 
-  let myClickCallback = () => {
+  const myClickCallback = () => {
     // `this` needs to be a reference to the outer scope, not the element clicked
     console.log('You clicked ', this);
   }
@@ -152,7 +152,7 @@
   button.removeEventListener('click', myClickCallback.bind(this));
 
   // Good
-  let myClickCallbackHandler = myClickCallback.bind(this);
+  const myClickCallbackHandler = myClickCallback.bind(this);
 
   button.addEventListener('click', myClickCallbackHandler);
   button.removeEventListener('click', myClickCallbackHandler);
@@ -161,7 +161,8 @@
 * Avoid DOM read/write loops. Measuring the size of an element forces a relayout in the browser which, if then invalidated by updating styles, requires an additional relayout if more measurements are needed. See [On Layout and Web Performance](https://kellegous.com/j/2013/01/26/layout-performance/).
 * When possible, get and store measurements as early as possible so as to avoid unnecessary forced relayouts.
 * Declare only needed variables In the spirit of minimizing use of memory, only declare a variable if needed. The 'gotcha' here is having `e` as a parameter in an event callback and then not using it.
-* Always use `throttle` and `debounce` for repeated events such as scroll and resize. This limits the rate at which an event callback gets executed. Unless a faster response is needed, our default delay value is 300.
+* Always use `throttle` and `debounce` for repeated events such as scroll and resize. This limits the rate at which an event callback gets executed. Unless a faster response is needed, default to a delay value of 300.
+* Pre-calculate style changes for animatinos by way of the [FLIP method](https://aerotwist.com/blog/flip-your-animations/) so as to not be making them during the animation.
 
 
 <a name="sources"></a>
