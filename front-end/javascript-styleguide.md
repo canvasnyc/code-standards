@@ -92,6 +92,21 @@
   }
   ```
 
+* 1 line `if`s are fine, 3 or more are preferred. No 2 line `if` statements
+
+  ```javascript
+  // bad
+  if (condition)
+    doSomething();
+
+  // good
+  if (condition) doSomething();
+
+  // good
+  if (condition) {
+    doSomething();
+  }
+  ```
 
 <a name="comments"></a>
 ## Comments
