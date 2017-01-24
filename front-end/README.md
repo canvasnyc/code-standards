@@ -1,4 +1,4 @@
-# Front-end Core Standards
+–# Front-end Core Standards
 
 ## Table of Contents
 
@@ -65,7 +65,7 @@
 * **HammerJS**: adds touch gestures [source](http://hammerjs.github.io/)
 * **VelocityJS**: accelerated JavaScript animations with or without jQuery [source](http://velocityjs.org/)
 * **Waypoints**: useful for events triggered by scroll points [source](http://imakewebthings.com/waypoints/)
-* **Underscore**: great set of utility functions (including debounce and throttle) [source](http://underscorejs.org/)
+* **Lodash**: great set of utility functions included as needed (including debounce and throttle) [source](https://lodash.com/)
 
 
 ####  * Common ES6 Polyfills
