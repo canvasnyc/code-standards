@@ -1,4 +1,4 @@
-–# Front-end Core Standards
+# Front-end Core Standards
 
 ## Table of Contents
 
