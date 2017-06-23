@@ -32,6 +32,7 @@
 * Do not use closing slashs on self closing elements: `<br>`, `<hr>`, `<img>`
 * Do not use tables for anything that isn't tabular data.
 * Take advantage of the default behavior of generic `<div>` and `<span>` elements (i.e., don't put `display: inline` on a `div` and don't put `display: block` on a `span`). Likewise, don't redeclare these values.
+* Use `<strong>` instead of a `<b>` tag to make something semantically *bold* and use `<em>` instead of `<i>` to make something semantically _italic_. `<b>` and `<i>` bear no meaning to screenreaders of how that text is different than the rest.
 
 <a name="templating"></a>
 ## Technology
