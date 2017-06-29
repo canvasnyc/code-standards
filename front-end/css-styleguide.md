@@ -11,14 +11,15 @@
 6.  [Responsive](#responsive)
 7.  [SCSS](#scss)
 8.  [File Organization](#organization)
-9. [Resets](#resets)
-10. [Sources](#sources)
+9.  [Resets](#resets)
+10. [Notes on performance](#performance)
+11. [Sources](#sources)
 
 
 <a name="whitespace"></a>
 ## Whitespace
 
-* Configure your IDE to use soft-tabs with a two space indent. Spaces guarantee code 
+* Configure your IDE to use soft-tabs with a two space indent. Spaces guarantee code
   will renders the same all environment.
 * Trim trailing white spaces.
 * Add a space after the `:` in property declarations.
@@ -26,7 +27,7 @@
 * One selector per line, one rule per line
 * Place closing braces of selectors on their own line.
 * Include a space after each comma in comma-separated property or function values.
-* Large blocks of single declarations can use a single-line format. In this case, a 
+* Large blocks of single declarations can use a single-line format. In this case, a
   space should be included after the opening brace and before the closing brace.
 
 <a name="formatting"></a>
@@ -34,7 +35,7 @@
 
 * Always use #hex color codes, unless using rgb/rgba.
 * Do not specify units for 0 values. `margin: 0;`
-* Try to limit use of shorthand declarations to instances where you must explicitly set 
+* Try to limit use of shorthand declarations to instances where you must explicitly set
   all the available values.
 * Order properties _alphabetically_.
 * Use unit-less line-height. `line-height: 1.5;`
@@ -57,7 +58,7 @@
   margin: 0;
   padding-bottom: 0;
   @include mixin(example-mixin);
-  
+
   .example__component {
     background: #AAA;
     display: block;
@@ -81,7 +82,7 @@
 * Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming conventions.
 * Provide clear names for your selectors.
 * Do not unnecessarily abriviate selectors, and reduce readability.
-* Strive to create loosely coupled, modular code that can be easily reused regardless of 
+* Strive to create loosely coupled, modular code that can be easily reused regardless of
   its container or contents.
 * Avoid the use of ID’s. The negligible performance difference is not worth the limitations.
 * When a class is applied or used as a selector for JavaScript, prefix the class with js-.
@@ -93,13 +94,13 @@
 <a name="comments"></a>
 ## Comments
 
-* Well commented code is extremely important. Take time provide information about your 
+* Well commented code is extremely important. Take time provide information about your
   code, it’s limitations, and any non-obvious information.
-* Always add an introductory comment to all partials to provide clarity about the files 
+* Always add an introductory comment to all partials to provide clarity about the files
   contents and purpose.
 * Use consistent, hierarchical comments to divide and organize your files.
 * Try to make comments concise and intuitive.
-* It’s a good idea to configure your editor to provide you with shortcuts to output 
+* It’s a good idea to configure your editor to provide you with shortcuts to output
   agreed-upon comment patterns.
 
 #### Example:
@@ -129,12 +130,12 @@
 //  ------------------------------------------
 //
 //  Comment on multiple lines
-//  
+//
 //  This is an Example of a long comment that
 //  spans multiple line.
-//  
-//  Use this format for long descriptions and 
-//  more detailed documentation 
+//
+//  Use this format for long descriptions and
+//  more detailed documentation
 //
 //  ------------------------------------------
 
@@ -147,7 +148,7 @@
 
 * Avoid using `!important` unless __absolutely necessary__.
 * Try to work with the cascade and avoid unecessary overrides.
-* Try to avoid chaining selectors `.myselector.another.and-another` but 
+* Try to avoid chaining selectors `.myselector.another.and-another` but
   rather create a new specific class.
 * Use .ie conditionals to set IE specific code.
 * Use Modernizr when necessary to provide feature classes and overrides.
@@ -156,11 +157,11 @@
 <a name="responsive"></a>
 ## Responsive
 
-* Always build mobile first. This will greatly reduce the weight on mobile and 
+* Always build mobile first. This will greatly reduce the weight on mobile and
   significantly reduces necessary overrides through media queries.
 * Always specify your media query breakpoints via variables.
 * Nest media queries inside the original selector, allow them to be easily located
-  and modified. If Sprockets is available combine all media queries for production 
+  and modified. If Sprockets is available combine all media queries for production
   with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
 * When nesting creates readability issues, include your media quierys at the bottom
   of that partial.
@@ -213,7 +214,7 @@ $breakpoints: (
 * Always place nested selectors after it's parents.
 * Use variables for all common numbers, and numbers with meaning.
 * Use Compass for all vendor prefixing
-* Consolodate all global Variables and Mixins into their own files. 
+* Consolodate all global Variables and Mixins into their own files.
 
 
 <a name="organization"></a>
@@ -222,52 +223,52 @@ $breakpoints: (
 #### Folder Structure:
 
 ```
-sass/ 
-| 
-|– base/ 
-|   |– _reset.scss       # Reset/normalize 
-|   |– _typography.scss  # Typography rules 
-|   ...                  # Etc… 
-| 
-|– components/ 
-|   |– _buttons.scss     # Buttons 
-|   |– _carousel.scss    # Carousel 
-|   |– _cover.scss       # Cover 
-|   |– _dropdown.scss    # Dropdown 
-|   |– _navigation.scss  # Navigation 
-|   ...                  # Etc… 
-| 
-|– helpers/ 
-|   |– _variables.scss   # Sass Variables 
-|   |– _functions.scss   # Sass Functions 
-|   |– _mixins.scss      # Sass Mixins 
-|   |– _helpers.scss     # Class & placeholders helpers 
-|   ...                  # Etc… 
-| 
-|– layout/ 
-|   |– _grid.scss        # Grid system 
-|   |– _header.scss      # Header 
-|   |– _footer.scss      # Footer 
-|   |– _sidebar.scss     # Sidebar 
-|   |– _forms.scss       # Forms 
-|   ...                  # Etc… 
-| 
-|– pages/ 
-|   |– _home.scss        # Home specific styles 
-|   |– _contact.scss     # Contact specific styles 
-|   ...                  # Etc… 
-| 
-|– themes/ 
-|   |– _theme.scss       # Default theme 
-|   |– _admin.scss       # Admin theme 
-|   ...                  # Etc… 
-| 
-|– vendors/ 
-|   |– _bootstrap.scss   # Bootstrap 
-|   |– _jquery-ui.scss   # jQuery UI 
-|   ...                  # Etc… 
-| 
-| 
+sass/
+|
+|– base/
+|   |– _reset.scss       # Reset/normalize
+|   |– _typography.scss  # Typography rules
+|   ...                  # Etc…
+|
+|– components/
+|   |– _buttons.scss     # Buttons
+|   |– _carousel.scss    # Carousel
+|   |– _cover.scss       # Cover
+|   |– _dropdown.scss    # Dropdown
+|   |– _navigation.scss  # Navigation
+|   ...                  # Etc…
+|
+|– helpers/
+|   |– _variables.scss   # Sass Variables
+|   |– _functions.scss   # Sass Functions
+|   |– _mixins.scss      # Sass Mixins
+|   |– _helpers.scss     # Class & placeholders helpers
+|   ...                  # Etc…
+|
+|– layout/
+|   |– _grid.scss        # Grid system
+|   |– _header.scss      # Header
+|   |– _footer.scss      # Footer
+|   |– _sidebar.scss     # Sidebar
+|   |– _forms.scss       # Forms
+|   ...                  # Etc…
+|
+|– pages/
+|   |– _home.scss        # Home specific styles
+|   |– _contact.scss     # Contact specific styles
+|   ...                  # Etc…
+|
+|– themes/
+|   |– _theme.scss       # Default theme
+|   |– _admin.scss       # Admin theme
+|   ...                  # Etc…
+|
+|– vendors/
+|   |– _bootstrap.scss   # Bootstrap
+|   |– _jquery-ui.scss   # jQuery UI
+|   ...                  # Etc…
+|
+|
 `– style.scss             # primary Sass file
 ```
 [Reference](http://www.sitepoint.com/architecture-sass-project/)
@@ -288,12 +289,56 @@ html {
   @include box-sizing(border-box);
 }
 
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   @include box-sizing(inherit);
 }
 ```
+
+
+<a name="performance"></a>
+## Notes on performance
+
+* Try to stick with simple and clear selectors whenever possible.
+
+#### Example:
+In the simplest case you reference an element in your CSS with just a class:
+```
+.title {
+  /* styles */
+}
+```
+But, as any project grows, it will likely result in more complex CSS, such that you may end up with selectors that look like this:
+```
+.box:nth-last-child(-n+1) .title {
+  /* styles */
+}
+
+```
+In order to know that the styles need to apply the browser has to effectively ask “is this an element with a class of title which has a parent who happens to be the minus nth child plus 1 element with a class of box?” Figuring this out can take a lot of time, depending on the selector used and the browser in question. The intended behavior of the selector could instead be changed to a class:
+```
+.final-box-title {
+  /* styles */
+}
+```
+You can take issue with the name of the class, but the job just got a lot simpler for the browser. In the previous version, in order to know, for example, that the element is the last of its type, the browser must first know everything about all the other elements and whether there are any elements that come after it that would be the nth-last-child, which is potentially a lot more expensive than simply matching up the selector to the element because its class matches. [Source](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+
+* When animating, the 4 properties browsers can animation most cheaply are position, scale, rotation and opacity.
+```
+.animating-item {
+  transform: translate(npx, npx);
+  transform: scale(npx);
+  transform: rotate(ndeg);
+  opacity: 0...1;
+}
+```
+Browsers have 5 steps in rendering pixels on the screen: JavaScript, Style, Layout, Paint, and Composite. JavaScript and Style are pretty straightforward. Layout is where everything goes and their sizes. Paint is where pixels start to get filled in such as drawing text, borders, colors, images, and shadows. Composite makes sure that everything was layered correctly. Those 4 properties only trigger an update in the composite step while all others either enact a re-paint or a re-layout. If a change is made in any step, all the steps after need to be re-exectued.
+
+* Avoid frequent changes of classes on top level elements such as html and body.
+
+This harkens to the previous topic of how a browser renders a pixel because if you change a class on the body element, it has to go through every child element and make any updates that may reflect the newly added/removed class.
+
 
 
 <a name="sources"></a>
@@ -315,3 +360,9 @@ html {
 * [SMACSS](http://smacss.com/)
 * [Atomic CSS](http://bradfrostweb.com/blog/post/atomic-web-design/)
 * [OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+
+#### Performance Links
+
+* [High Performance Animations](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+* [CSS Triggers](https://csstriggers.com/)
+* [Rendering Performance](https://developers.google.com/web/fundamentals/performance/rendering/)

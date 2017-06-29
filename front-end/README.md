@@ -20,7 +20,7 @@
 * Strive to create loosely coupled, highly reusable code.
 * Always keep extensibility in mind.
 * Maintain code that is easy read and understand.
-* All code in any code-base should look like a single person wrote it, even on a team 
+* All code in any code-base should look like a single person wrote it, even on a team
   with many contributors.
 * When trying to fix an issue, consider removing code before adding to it.
 * It is important to strictly enforce the agreed-upon standards.
@@ -47,6 +47,8 @@
 * Syntax: **ES6**
 * Dom Manipulation Framework: **jQuery**
 * UI Framework: **ReactJS**
+* Style Guide: [View Guide](https://github.com/canvasnyc/code-standards/blob/master/front-end/javascript-styleguide.md)
+
 
 ####  * When Rails is *Not* Avialable
 * Compiler: **Webpack**
@@ -61,3 +63,13 @@
 * **Fastclick**: removes 300ms delay on touch devices [source](https://github.com/ftlabs/fastclick)
 * **Modernizr**: feature testing [source](https://modernizr.com/)
 * **HammerJS**: adds touch gestures [source](http://hammerjs.github.io/)
+* **VelocityJS**: accelerated JavaScript animations with or without jQuery [source](http://velocityjs.org/)
+* **Waypoints**: useful for events triggered by scroll points [source](http://imakewebthings.com/waypoints/)
+* **Lodash**: great set of utility functions included as needed (including debounce and throttle) [source](https://lodash.com/)
+
+####  * Common Polyfills
+* `requestAnimationFrame`: Needs to be vender prefixed in JavaScript [source](https://gist.github.com/paulirish/1579671)
+
+####  * Common ES6 Polyfills
+* `Array.from()`: Needed for IE11 [source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill)
+* `Object.assign()`: Needed for IE11 [source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign#Polyfill)
